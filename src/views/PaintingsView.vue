@@ -17,8 +17,10 @@
         <p>
           Sauf mentions contraires, mes tableaux sont disponibles à l'achat. Si vous souhaitez
           obtenir plus d'informations sur une œuvre en particulier, veuillez me contacter
-          <router-link :to="{ name: 'contact' }">via le formulaire de contact</router-link>. Je
-          serai ravie de répondre à vos questions et de vous fournir tous les détails nécessaires.
+          <router-link :to="{ name: 'contact' }" class="link"
+            >via le formulaire de contact</router-link
+          >. Je serai ravie de répondre à vos questions et de vous fournir tous les détails
+          nécessaires.
         </p>
       </div>
       <Starport port="paitings">
@@ -26,12 +28,29 @@
       </Starport>
     </div>
   </section>
+  <section>
+    <ul id="gallery">
+      <li v-for="painting in paintings" :key="painting.id">
+        <img :src="painting.main_picture" />
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
+import { supabase } from '@/supabase'
 import { useHead } from '@unhead/vue'
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
 import { Starport } from 'vue-starport'
+
+interface Painting {
+  id: string
+  name: string
+  year: number
+  subType: string
+  dimension: string
+  main_picture: string
+}
 
 export default defineComponent({
   name: 'HomeView',
@@ -48,6 +67,17 @@ export default defineComponent({
         { name: 'robots', content: 'index, follow' }
       ]
     })
+
+    const paintings = ref([] as Painting[])
+    async function getPaintings() {
+      const { data } = await supabase.from('products').select('*')
+      if (data) {
+        paintings.value = data
+      }
+    }
+    getPaintings()
+
+    return { paintings }
   }
 })
 </script>

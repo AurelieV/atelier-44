@@ -35,3 +35,7 @@ body::-webkit-scrollbar {
 .btn.-primary-on-blue {
    @apply transition-colors border bg-cream text-blue hover:bg-transparent hover:border-cream hover:text-cream active:bg-cream active:text-blue;
 }
+
+.link {
+    @apply underline transition-colors text-blue decoration-copper underline-offset-2 hover:text-copper hover:decoration-brown active:text-blue;
+}

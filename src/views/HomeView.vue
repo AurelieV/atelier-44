@@ -41,7 +41,9 @@
   </section>
   <section class="relative pl-8 pr-5 text-xl bg-blue text-cream">
     <div class="max-w-[1300px] grid grid-cols-[auto_minmax(auto,_60ch)] mx-auto gap-3 with-wave">
-      <img src="@/assets/section_peinture.png" />
+      <Starport port="sacs">
+        <img src="@/assets/section_sac.png" />
+      </Starport>
       <div class="flex flex-col">
         <h2 class="mb-4 text-5xl font-hand">Mes sacs uniques</h2>
         <p>
@@ -53,7 +55,7 @@
           collection de sacs aux formes variées, aux couleurs vibrantes et aux finitions
           impeccables, et trouvez le compagnon parfait pour compléter votre style.
         </p>
-        <router-link :to="{ name: 'paintings' }" class="mx-auto mt-4 btn -primary-on-blue"
+        <router-link :to="{ name: 'bags' }" class="mx-auto mt-4 btn -primary-on-blue"
           >Voir mes sacs</router-link
         >
       </div>
