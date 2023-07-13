@@ -22,10 +22,12 @@
           >
         </li>
         <li>
-          <router-link
+          <a
             class="px-2 py-1 hover:underline hover:underline-offset-8 hover:decoration-copper active:decoration-brown active:decoration-4"
-            :to="{ name: 'contact' }"
-            >Contact</router-link
+            href="https://forms.gle/xHaZs4LokHEC1uGQA"
+            rel="external nofollow"
+            target="_blank"
+            >Contact</a
           >
         </li>
       </ul>

@@ -19,8 +19,12 @@
         <p>
           Sauf mention contraire, les sacs que vous trouverez ici sont disponibles à l'achat. Si
           vous souhaitez obtenir plus d'informations sur un modèle spécifique, veuillez me contacter
-          <router-link :to="{ name: 'contact' }" class="link"
-            >via le formulaire de contact</router-link
+          <a
+            href="https://forms.gle/xHaZs4LokHEC1uGQA"
+            rel="external nofollow"
+            target="_blank"
+            class="link"
+            >via le formulaire de contact</a
           >. Je serai ravie de discuter avec vous, de partager des détails supplémentaires et de
           vous aider à trouver le sac parfait qui correspond à vos goûts et besoins.
         </p>

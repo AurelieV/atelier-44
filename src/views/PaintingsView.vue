@@ -19,8 +19,12 @@
         <p>
           Sauf mentions contraires, mes tableaux sont disponibles à l'achat. Si vous souhaitez
           obtenir plus d'informations sur une œuvre en particulier, veuillez me contacter
-          <router-link :to="{ name: 'contact' }" class="link"
-            >via le formulaire de contact</router-link
+          <a
+            href="https://forms.gle/xHaZs4LokHEC1uGQA"
+            rel="external nofollow"
+            target="_blank"
+            class="link"
+            >via le formulaire de contact</a
           >. Je serai ravie de répondre à vos questions et de vous fournir tous les détails
           nécessaires.
         </p>
