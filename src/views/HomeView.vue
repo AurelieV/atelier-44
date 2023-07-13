@@ -1,12 +1,12 @@
 <template>
   <section class="relative pt-3 pr-5 bg-blue text-cream isolate">
-    <div class="max-w-[1300px] with-wave grid grid-cols-[auto_80ch] mx-auto">
-      <div class="image-container" aria-hidden="true">
+    <div class="max-w-[1300px] with-wave grid grid-col-[80ch] tablet:grid-cols-[auto_80ch] mx-auto">
+      <div class="hidden image-container tablet:block" aria-hidden="true">
         <img src="/hero_illustration.png" class="absolute z-10" />
       </div>
       <div class="ml-4">
         <h1 class="text-6xl font-hand w-[13ch]">Bienvenue à l'Atelier 44</h1>
-        <p class="mt-4 text-xl">
+        <p class="mt-4 text-md tablet:text-xl">
           Je suis IVP, une artiste passionnée de peinture et de couture. Dans mon petit atelier, je
           donne vie à des créations uniques qui témoignent de ma passion débordante et de mon amour
           profond pour l'expression artistique. Découvrez des tableaux vibrants aux couleurs
@@ -18,8 +18,10 @@
     </div>
     <Separator class="wave"></Separator>
   </section>
-  <section class="relative pt-8 pl-8 pr-5 text-xl bg-cream text-blue isolate">
-    <div class="max-w-[1300px] grid grid-cols-[minmax(auto,_60ch)_auto] mx-auto gap-3 with-wave">
+  <section class="relative pt-8 pl-8 pr-5 text-md tablet:text-xl bg-cream text-blue isolate">
+    <div
+      class="max-w-[1300px] grid grid-col-1 tablet:grid-cols-[minmax(auto,_60ch)_auto] mx-auto gap-3 with-wave"
+    >
       <div class="flex flex-col">
         <h2 class="mb-4 text-5xl font-hand">Mes tableaux</h2>
         <p>
@@ -39,8 +41,10 @@
       <Separator class="wave" inversed></Separator>
     </div>
   </section>
-  <section class="relative pl-8 pr-5 text-xl bg-blue text-cream">
-    <div class="max-w-[1300px] grid grid-cols-[auto_minmax(auto,_60ch)] mx-auto gap-3 with-wave">
+  <section class="relative pl-8 pr-5 text-md tablet:text-xl bg-blue text-cream">
+    <div
+      class="max-w-[1300px] grid grid-col-1 tablet:grid-cols-[auto_minmax(auto,_60ch)] mx-auto gap-3 with-wave"
+    >
       <Starport port="sacs">
         <img src="@/assets/section_sac.png" />
       </Starport>

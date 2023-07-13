@@ -3,6 +3,9 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        tablet: '821px'
+      },
       fontFamily: {
         hand: ['Arizonia', 'cursive']
       },
@@ -24,7 +27,7 @@ module.exports = {
         },
         cream: {
           DEFAULT: 'hsl(60, 3%, 93%)',
-          transparent: 'hsla(60, 3%, 93%, 0.5)'
+          transparent: 'hsla(60, 3%, 93%, 0.8)'
         }
       }
     }
