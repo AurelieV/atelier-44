@@ -169,6 +169,7 @@ export default defineComponent({
     })
     onUnmounted(() => {
       window.removeEventListener('keydown', onKeyDown)
+      document.body.classList.remove('overflow-hidden')
     })
 
     return { paintings, reloadGrid, selected }
