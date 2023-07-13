@@ -26,7 +26,7 @@
         </p>
       </div>
       <Transition appear name="slide-in">
-        <img src="@/assets/section_sac.png" />
+        <img src="#root/assets/section_sac.png" />
       </Transition>
       <Separator class="wave" inversed></Separator>
     </div>
@@ -84,7 +84,7 @@
 </template>
 
 <script lang="ts">
-import { supabase } from '@/supabase'
+import { supabase } from '#root/supabase'
 import { useHead } from '@unhead/vue'
 import { defineComponent, ref, nextTick, onMounted, onUnmounted, watch } from 'vue'
 import Masonry from 'masonry-layout'

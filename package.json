@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "npm run build-only",
+    "dev": "npm run server",
+    "build": "vite build && vite build --ssr && vite-plugin-ssr prerender",
+    "server": "node ./server",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
@@ -14,7 +15,9 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.26.0",
     "@unhead/vue": "^1.1.27",
+    "express": "^4.18.2",
     "masonry-layout": "^4.2.2",
+    "vite-plugin-ssr": "^0.4.133",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0",
     "vue-starport": "^0.3.0"

@@ -6,9 +6,9 @@
     "composite": true,
     "strict": true,
     "baseUrl": ".",
-    "moduleResolution":"node",
+    "moduleResolution": "node",
     "paths": {
-      "@/*": ["./src/*"]
+      "#root/*": ["./src/*"]
     }
   }
 }
