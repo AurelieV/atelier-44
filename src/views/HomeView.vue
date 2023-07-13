@@ -67,12 +67,11 @@
 <script lang="ts">
 import { useHead } from '@unhead/vue'
 import { defineComponent } from 'vue'
-import Separator from '@/components/Separator.vue'
 import { Starport } from 'vue-starport'
 
 export default defineComponent({
   name: 'HomeView',
-  components: { Separator, Starport },
+  components: { Starport },
   setup() {
     useHead({
       title: 'Atelier 44',
@@ -90,12 +89,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.wave {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
 .image-container {
   width: calc(100% * 755 / 853);
   writing-mode: vertical-rl;
@@ -103,10 +96,5 @@ export default defineComponent({
 .image-container img {
   height: 100%;
   object-fit: contain;
-}
-
-.with-wave {
-  padding-bottom: calc(100% / 960 * 128 + 50px);
-  height: max-content;
 }
 </style>

@@ -23,9 +23,9 @@
           vous aider à trouver le sac parfait qui correspond à vos goûts et besoins.
         </p>
       </div>
-      <Starport port="sacs">
+      <Transition appear name="slide-in">
         <img src="@/assets/section_sac.png" />
-      </Starport>
+      </Transition>
     </div>
   </section>
 </template>
@@ -33,10 +33,8 @@
 <script lang="ts">
 import { useHead } from '@unhead/vue'
 import { defineComponent } from 'vue'
-import { Starport } from 'vue-starport'
 
 export default defineComponent({
-  components: { Starport },
   setup() {
     useHead({
       title: 'Atelier 44 - Sacs',

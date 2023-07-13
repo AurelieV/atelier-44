@@ -23,7 +23,8 @@ module.exports = {
           DEFAULT: 'hsl(60, 2%, 88%)'
         },
         cream: {
-          DEFAULT: 'hsl(60, 3%, 93%)'
+          DEFAULT: 'hsl(60, 3%, 93%)',
+          transparent: 'hsla(60, 3%, 93%, 0.5)'
         }
       }
     }

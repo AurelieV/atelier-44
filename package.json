@@ -14,6 +14,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.26.0",
     "@unhead/vue": "^1.1.27",
+    "masonry-layout": "^4.2.2",
     "vue": "^3.3.2",
     "vue-router": "^4.2.0",
     "vue-starport": "^0.3.0"
