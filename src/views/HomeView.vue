@@ -1,11 +1,13 @@
 <template>
   <section class="relative pt-3 pr-5 bg-blue text-cream isolate">
-    <div class="max-w-[1300px] with-wave grid grid-col-[80ch] tablet:grid-cols-[auto_80ch] mx-auto">
+    <div
+      class="max-w-[1300px] with-wave flex flex-col tablet:grid tablet:grid-cols-[auto_80ch] mx-auto"
+    >
       <div class="hidden image-container tablet:block" aria-hidden="true">
         <img src="/hero_illustration.png" class="absolute z-10" />
       </div>
-      <div class="ml-4">
-        <h1 class="text-6xl font-hand w-[13ch]">Bienvenue à l'Atelier 44</h1>
+      <div class="flex flex-col ml-4">
+        <h1 class="text-6xl font-hand max-w-[13ch]">Bienvenue à l'Atelier 44</h1>
         <p class="mt-4 text-md tablet:text-xl">
           Je suis IVP, une artiste passionnée de peinture et de couture. Dans mon petit atelier, je
           donne vie à des créations uniques qui témoignent de ma passion débordante et de mon amour
