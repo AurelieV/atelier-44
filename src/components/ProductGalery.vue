@@ -23,9 +23,9 @@
         />
       </picture>
       <div
-        class="absolute bottom-0 left-0 right-0 px-3 pt-1 pb-3 transition-transform md:translate-y-full bg-cream-transparent group-hover:translate-y-0"
+        class="px-2 pt-1 transition-transform tablet:pb-3 tablet:absolute tablet:bottom-0 tablet:left-0 tablet:right-0 md:translate-y-full bg-cream-transparent group-hover:translate-y-0"
       >
-        <div class="font-bold text-center md:text-xl text-blue">{{ product.name }}</div>
+        <div class="text-sm font-bold text-center tablet:text-xl text-blue">{{ product.name }}</div>
       </div>
     </li>
   </ul>
