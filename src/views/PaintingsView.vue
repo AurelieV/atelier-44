@@ -1,5 +1,7 @@
 <template>
-  <section class="relative pt-8 pl-8 pr-5 text-md tablet:text-xl bg-cream text-blue isolate">
+  <section
+    class="relative max-w-full pt-8 pl-8 pr-5 overflow-hidden text-md tablet:text-xl bg-cream text-blue isolate"
+  >
     <div
       class="max-w-[1300px] grid grid-cols-1 tablet:grid-cols-[minmax(auto,_60ch)_auto] mx-auto gap-3 with-wave"
     >
