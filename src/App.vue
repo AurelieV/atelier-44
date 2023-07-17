@@ -5,7 +5,7 @@
     <router-link :to="{ name: 'home' }" class="flex">
       <img src="@/assets/logo_header.svg" class="" />
     </router-link>
-    <nav class="ml-auto text-xl text-cream max-w-[1000px] my-auto">
+    <nav class="ml-auto text-lg tablet:text-xl text-cream max-w-[1000px] my-auto">
       <ul class="flex space-x-3">
         <li>
           <router-link
